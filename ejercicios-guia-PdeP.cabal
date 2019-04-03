@@ -1,0 +1,62 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: b68febfcbc1a458cd1c512e65b22c21aad38564d84a3aa43d5d6337c03b414bf
+
+name:           ejercicios-guia-PdeP
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/ejercicios-guia-PdeP#readme>
+homepage:       https://github.com/githubuser/ejercicios-guia-PdeP#readme
+bug-reports:    https://github.com/githubuser/ejercicios-guia-PdeP/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2019 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/ejercicios-guia-PdeP
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_ejercicios_guia_PdeP
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable ejercicios-guia-PdeP-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_ejercicios_guia_PdeP
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , ejercicios-guia-PdeP
+  default-language: Haskell2010
+
+test-suite ejercicios-guia-PdeP-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_ejercicios_guia_PdeP
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , ejercicios-guia-PdeP
+  default-language: Haskell2010
