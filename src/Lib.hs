@@ -23,7 +23,7 @@ fahrToCelsius :: Int -> Int
 fahrToCelsius gradosFahr=(div ((gradosFahr-32)*5) 9)
 
 esMultiploDeTres :: Int -> Bool
-esMultiploDeTres numero = not ((mod numero 3)>0)
+esMultiploDeTres numero = ((mod numero 3)==0)
 
 esMultiploDe :: Int -> Int -> Bool
-esMultiploDe primerNumero segundoNumero = not ((mod segundoNumero primerNumero)>0)
+esMultiploDe primerNumero segundoNumero = mod segundoNumero primerNumero ==0
